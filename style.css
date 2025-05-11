@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    height: 60px;
+    width: full;
+    background-color: black;
+    display: flex;background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem 0;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
+}
+.show{
+    height: 1080px;
+    width: full;
+    background-color: aquamarine;
+}
+.logo{
+    height: full;
+    width: 40%;
+    background-color: blue;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #ff4d4d, #f9cb28);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 1px;
+}
+.title{
+    height: full;
+    width: 60%;
+    background-color: transparent;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+.home{
+    height: full;
+    background-color: transparent;
+    display:flex;
+    font-size: 1rem;
+    font-weight: 600;
+    color: aliceblue;
+}
+.movie{
+    height: full;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    color: aliceblue;
+}
+.genres{
+    height: full;;
+    background-color: transparent;
+    display:flex;
+    font-size: 1rem;
+    font-weight: 600;
+    color: aliceblue;
+}
+.coming{
+    height: full;
+    background-color: transparent;
+    display:flex;
+    font-size: 1rem;
+    font-weight: 600;
+    color: aliceblue;
+}
+.about{
+    height: full;
+    background-color: transparent;
+    display:flex;
+    font-size: 1rem;
+    font-weight: 600;
+    color: aliceblue;
+}

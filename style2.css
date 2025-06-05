@@ -27,6 +27,14 @@ header {
     padding: 0 2rem;
 }
 .logo {
+    height: full;
+    width: 20%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo a{
     font-size: 2rem;
     font-weight: 800;
     background: linear-gradient(to right, #ff4d4d, #f9cb28);
@@ -59,6 +67,9 @@ nav ul li a {
     position: relative;
     padding-bottom: 5px;
 }
+nav ul li a:hover{
+    color: #ff4d4d;
+} 
 section {
     display: block;
     unicode-bidi: isolate;
@@ -76,11 +87,14 @@ section {
     gap: 3rem;
 }
 .movie-detail-poster {
-    height: 450px;
+    height: 600px;
+    width: 300px;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
     position: relative;
+}
+.zurag{
+    height: 450px;
 }
 .movie-detail-poster img {
     width: 100%;
@@ -99,6 +113,25 @@ section {
     font-size: 1.1rem;
     display: flex;
     align-items: center;
+}
+.watch{
+    padding-top: 50px;
+    width: 100px;
+    height: 50px;
+    transition: all 0.1s ease;
+}
+.btn {
+    margin-left: 55px;
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(to right, #ff4d4d, #f9cb28);;
+    text-decoration: none;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+.watch:hover{
+    padding-top: 45px;
 }
 .movie-detail-content {
     padding-top: 1rem;
@@ -177,7 +210,7 @@ div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 .section-title {
     font-size: 2.2rem;
@@ -197,12 +230,17 @@ div {
     gap: 2.5rem;
 }
 .movie-card {
+    margin-top: 15px;
     position: relative;
     border-radius: 12px;
     overflow: hidden;
     transition: all 0.3s ease;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     background: #1a1a1a;
+}
+.movie-card:hover{
+    margin-top: 0px;
+    margin-bottom: 15px;
 }
 .movie-poster {
     height: 375px;
@@ -247,6 +285,11 @@ div {
 .movie-details span {
     margin-right: 1rem;
     margin-bottom: 0.5rem;
+}
+.movie-detail-meta span::before {
+    content: "•";
+    margin-right: 0.8rem;
+    color: #ff4d4d;
 }
 .movie-category {
     display: inline-block;

@@ -75,15 +75,17 @@
     transition: all 0.3s ease;
     font-size: 16px;
     margin-right: 16px;
+    cursor: pointer;
 }
-.logo{
+.logo {
     height: full;
     width: 40%;
-    background-color: blue;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.logo a{
     font-size: 2rem;
     font-weight: 800;
     background: linear-gradient(to right, #ff4d4d, #f9cb28);
@@ -185,10 +187,11 @@
 
 }
 .movie-header{
+    max-width: 1360px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 48px;
+    margin-bottom: 30px;
 }
 .view-all {
     color: #ff4d4d;
@@ -205,14 +208,18 @@
     transition-delay: 0s;
     transition-property: all;
 }
+.view-all:hover{
+    color: #f9cb28;   
+    }
 .movie-list{
     background-color: none;
     width: full;
     height: 570px;
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
 }
 .moviecard {
+    margin-top: 15px;
     width: 304px;
     height: 570px;
     position: relative;
@@ -221,11 +228,11 @@
     transition: all 2s ease;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     background: #1a1a1a;
-    transition: slide-top 1s , ease;
+    transition: all 0.3s  ease;
 }
-.moviecard
-{-webkit-animation:slide-top 1s both;
-    animation:slide-top 1s both}
+.moviecard:hover{
+    margin-top: 0px;
+}
 .movie-poster{
     height: 375px;
     overflow: hidden;
@@ -409,7 +416,7 @@ ul {
 .footer-links a {
     color: #a0a0a0;
     text-decoration: none;
-    transition: all 0.3sease;
+    transition: all 0.3 ease;
     font-size: 0.9rem;
 }
 .social-icons{
@@ -425,7 +432,7 @@ ul {
     align-items: center;
     justify-content: center;
     margin-right: 1rem;
-    transition: all 0.3sease;
+    transition: all 0.3 ease;
     text-decoration: none;
     font-size: 0.9rem;
 }
